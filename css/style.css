@@ -355,6 +355,7 @@ body {
    color: #828282;
    padding: 13px 0;
    margin-bottom: 14px;
+   display: block;
 }
 .shipping__login {
    font-family: 'Oswald';
@@ -551,6 +552,12 @@ hr {
 @media (max-width:630px) {
    .shipping__info {
       row-gap: 15px;
+   }
+   .shipping__login {
+      width: 130px;
+   }
+   .shipping__login:not(:last-child) {
+      margin-right: 0;
    }
    .shipping__info > div{
       display: flex;

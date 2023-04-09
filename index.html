@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--Язык неопределен - zxx -->
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<!--Настройка адаптива-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!--Заголовок-->
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+		</header>
+		<main class="main">
+			<div class="page">
+				<div class="page__container">
+					<div class="page__title">
+						<h2>Checkout</h2>
+					</div>
+					<div class="page__sub-title">
+						<h4>There are 3 products in your cart</h4>
+					</div>
+					<div class="page__billing-title">
+						<h3>Billing Details</h3>
+					</div>
+					<form action="#" class="page__billing billing">
+						<div class="billing__info">
+							<input placeholder="First name*" required type="text">
+							<input placeholder="Last name*" required type="text">
+							<input placeholder="Address*" required type="text">
+							<input placeholder="Address line 2" type="text">
+							<select class="billing__country" name="country" id="country">
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="Czech Republic">Czech Republic</option>
+								<option value="Ukraine">Ukraine</option>
+							</select>
+							<input placeholder="City/Town*" required type="text">
+							<input placeholder="Postcode / ZIP*" required type="text">
+							<input placeholder="Phone*" required type="tel">
+							<input placeholder="Postcode / ZIP*" required type="text">
+							<input placeholder="Phone*" required type="tel">
+						</div>
+						<textarea class="billing__textarea" placeholder="Additional information" name="add-info" id="add-info"
+							cols="" rows=""></textarea>
+						<div class="page__checkboxs checboxs">
+							<div class="checkboxs__create-account">
+								<input id="account-create" type="checkbox">
+								<label class="checkboxs__acc" checked for="account-create">Create Account</label>
+							</div>
+							<div class="checkboxs__another-ship">
+								<input id="another-ship" type="checkbox">
+								<label class="checkboxs__address" checked for="another-ship">Ship to a different
+									address?</label>
+							</div>
+						</div>
+						<div class="billing__coupon coupon">
+							<div class="coupon__title">
+								<h3>Apply Coupon to get discount!</h3>
+							</div>
+							<input class="coupon__input" placeholder="Coupon code" type="text">
+							<button class="coupon__btn" type="submit">Apply Code</button>
+						</div>
+					</form>
+					<form action="#" class="page__shipping shipping">
+						<h2 class="shipping__title">Shipping Address</h2>
+						<div class="shipping__account account">
+							<div class="account__email">
+								<label for="account-email">Street Address *</label>
+								<input required id="account-email" type="email">
+							</div>
+							<div class="account__password">
+								<label for="account-password">Password</label>
+								<input required id="account-password" type="password">
+							</div>
+							<div class="account__zip">
+								<label for="account-zip">Zip/Postal Code</label>
+								<input required id="account-zip type=" tel">
+							</div>
+							<h4 class="shipping__sign-in">You already have an account with us. Sign in or continue as guest.
+							</h4>
+							<button class="shipping__login" type="submit">login</button>
+							<div class="shipping__frg-password">
+								<a href="#">Forgot Your Password?</a>
+							</div>
+						</div>
+						<hr>
+						<div class="shipping__info info">
+							<div class="info__name">
+								<label for="first-name">First Name *</label>
+								<input required id="first-name" type="text">
+							</div>
+							<div class="info__surname">
+								<label for="surname">Last Name *</label>
+								<input required id="surname" type="text">
+							</div>
+							<div class="info__company">
+								<label for="company">Company</label>
+								<input id="company" type="text">
+							</div>
+							<div class="info__address">
+								<label for="address">Street Address *</label>
+								<input required id="address" type="text">
+							</div>
+							<div class="info__address">
+								<label for="address"></label>
+								<input id="address" type="text">
+							</div>
+							<div class="info__address">
+								<label for="address"></label>
+								<input id="address" type="text">
+							</div>
+							<div class="info__country">
+								<label for="info-country">Country *</label>
+								<input required id="info-country" type="text">
+							</div>
+							<div class="info__region">
+								<label required for="state">State/Province *</label>
+								<select name="state" id="state">
+									<option required value="""></option>
+									<option disabled selected value=" Region, state or province">Please select a region,
+										state or province</option>
+									<option value="Sumy">Sumy</option>
+									<option value="Kyiv">Kyiv</option>
+									<option value="Kharkiv">Kharkiv</option>
+									<option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+								</select>
+							</div>
+						</div>
+						<div class="shipping__title">
+							<h2>Shipping Methods</h2>
+						</div>
+						<div class="shipping__methods methods">
+							<hr>
+							<div class="methods__variant-costs costs">
+								<div class="costs__price price">
+									<input checked required class="price__input" id="costs-5" class="costs__price" name="cost"
+										type="radio">
+									<label class="price__label" class="" for="costs-5">$5.00</label>
+								</div>
+								<label for="costs-5">Fixed</label>
+								<label for="costs-5">Flat Rate</label>
+							</div>
+							<hr>
+							<div class="methods__variant-costs costs">
+								<div class="costs__price price">
+									<input required class="price__input" id="costs-10" class="costs__price" name="cost"
+										type="radio">
+									<label class="price__label" class="" for="costs-10">$10.00</label>
+								</div>
+								<label for="costs-10">Table Rate</label>
+								<label for="costs-10">Best Way</label>
+							</div>
+						</div>
+						<div class="shipping__submit-btn">
+							<button class="shipping__btn-next" type="submit">Next</button>
+							<button class="shipping__btn-back" type="disabled">back</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="another-homework" class="homework">
+				<div class="homework__container">
+					<div class="homework__title">
+						Minimalist Room
+					</div>
+					<div class="homework__description">
+						<p>
+							It is a long established fact that a reader will be distracted by the readable content of a page
+							when
+							looking at its layout.
+						</p>
+					</div>
+					<div class="homework__main-image">
+						<img src="img/minimalist/01.png" alt="Minimalist Image">
+					</div>
+					<div class="homework__main-text text">
+						<div class="text__content">
+							<div class="text__title">
+								Project Overview
+							</div>
+							<div class="text__project">
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done
+									anytime and anywhere. Online learning with us does not interfere with your daily life.
+									because learning can be done anytime and anywhere. Online learning with us does not interfere
+									with your daily life. because learning can be done anytime and anywhere.
+								</p>
+							</div>
+							<div class="text__info">
+								<div class="text__date">
+									July 22 - 2022
+								</div>
+								<div class="text__author">
+									Interior Design - Furnitur
+								</div>
+							</div>
+						</div>
+						<div class="text__content">
+							<div class="text__title">
+								Design Process
+							</div>
+							<div class="text__project">
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+								</p>
+								<p>
+									Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere. Online learning with us does not interfere with your daily life. because learning can be done anytime and anywhere.
+									
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="homework__block-images block-images">
+						<img src="img/minimalist/02.png" alt="">
+						<img src="img/minimalist/03.png" alt="">
+						<img src="img/minimalist/04.png" alt="">
+						<img src="img/minimalist/05.png" alt="">
+						<img src="img/minimalist/06.png" alt="">
+					</div>
+
+					
+					<div class="achievement">
+						<div class="achievement__container">
+							<h4 class="achievement__title">ACHIEVEMENT</h4>
+							<div class="achievement__cards">
+								<div class="achievement__card card">
+									<div class="card__description">
+										<div class="card__title">
+											<h3>Interior design</h3>
+										</div>
+										<div class="card__text">
+											<p>
+												Customize your interior design into a dream place with the best designers and quality
+												furniture. We try our best to fulfill your expectations.
+											</p>
+										</div>
+									</div>
+									<div class="card__image">
+										<img src="img/01.webp" alt="Black armchairы and white sofas">
+									</div>
+									
+								</div>
+								<div class="achievement__card card">
+									<div class="card__description">
+										<div class="card__title">
+											<h3>Consultant</h3>
+										</div>
+										<div class="card__text">
+											<p>
+												Customize your interior design into a dream place with the best designers and quality
+												furniture. We try our best to fulfill your expectations.
+											</p>
+										</div>
+									</div>
+									<div class="card__image">
+										<img src="img/02.webp" alt="Black armchairы and white sofas">
+									</div>
+									
+								</div>
+								<div class="achievement__card card">
+									<div class="card__description">
+										<div class="card__title">
+											<h3>Construction consultant</h3>
+										</div>
+										<div class="card__text">
+											<p>
+												Customize your interior design into a dream place with the best designers and quality
+												furniture. We try our best to fulfill your expectations.
+											</p>
+										</div>
+									</div>
+									<div class="card__image">
+										<img src="img/03.webp" alt="Black armchairы and white sofas">
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</main>
+
+	<footer class="footer">
+
+	</footer>
+
+	</div>
+</body>
+
+</html>
